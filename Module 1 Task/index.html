@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <style>
+      :root {
+        --c-bg: snow;
+        --c-scrollbar: lightsteelblue;
+        --c-scrollbar-hover: #000;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar:horizontal {
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track,
+      ::-webkit-scrollbar-corner {
+        background: var(--c-bg);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--c-scrollbar);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--c-scrollbar-hover);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section 1 -->
+    <div class="">
+      <div
+        class="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56"
+      >
+        <header class="absolute inset-x-0 top-0 z-10 py-8 xl:py-12">
+          <nav class="bg-trasparent text-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex h-16 items-center">
+                <div class="flex-shrink-0">
+                  <img src="./logo.png" alt="Logo" />
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                  <a
+                    href="#"
+                    class="text-black hover:text-blue-800 px-3 py-2 rounded-md text-sm font-medium"
+                    >Home</a
+                  >
+                  <a
+                    href="#"
+                    class=" flex text-black hover:text-blue-800 px-3 py-2 rounded-md text-sm font-medium"
+                    >Adversite<svg
+                    class="w-2.5 h-2.5 ms-2.5 mt-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg></a
+                  >
+                  <a
+                    href="#"
+                    class="text-black flex hover:text-blue-800 px-3 py-2 rounded-md text-sm font-medium"
+                    >Supports<svg
+                    class="w-2.5 h-2.5 ms-2.5 mt-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg></a
+                  >
+                  <a
+                    href="#"
+                    class="text-black hover:text-blue-800 px-3 py-2 rounded-md text-sm font-medium"
+                    >About</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="absolute inset-0">
+          <img class="object-cover w-full h-full" src="Hero.png" alt="" />
+        </div>
+
+        <div class="relative">
+          <div class="flex h-[100%]">
+            <img src="leaf.png" />
+            <div
+              class="ml-[3%] px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl md:flex md:justify-center"
+            >
+              <div class="w-full lg:w-2/3 xl:w-1/2">
+                <p class="mt-6 font-extrabold text-black text-6xl mb-8">
+                  A Creative way to grow<br />your Exciting Business<br />ideas
+                </p>
+                <p
+                  class="mt-12 font-sans text-base font-normal leading-7 text-black text-opacity-70"
+                >
+                  Get your blood tests delivered at let home collect sample
+                  from<br />the victory of the managments that supplies best
+                  design<br />system guidelines ever.
+                </p>
+                <p class="mt-8 font-sans text-xl font-normal text-white"></p>
+
+                <div class="flex max-w-lg mx-auto mt-8">
+                  <div class="relative w-full">
+                    <input
+                      type="text"
+                      id="voice-search"
+                      class="h-16 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                      placeholder="Type your domain here"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700"
+                  >
+                    Get Started
+                  </button>
+                </div>
+
+                <div class="flex items-center mt-5 space-x-3 sm:space-x-4">
+                  <img src="sponser.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <section
+      id="features"
+      class="container mx-auto px-4 space-y-6 py-8 md:py-12 lg:py-20"
+    >
+      <div
+        class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center"
+      >
+        <p
+          class="max-w-[85%] text-green-600 leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+        >
+          Ideal solutions for you
+        </p>
+        <h2 class="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+          Go beyond ultimate features
+        </h2>
+      </div>
+
+      <div
+        class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3"
+      >
+        <div
+          class="h-70 overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+            <img class="h-12 w-12 fill-current" src="./section-2/icon-1.png" />
+            <div class="mt-8 space-y-2">
+              <h3 class="font-bold">Email Subscription</h3>
+              <p class="text-sm text-muted-foreground">
+                We’re driven beyond just finishing projects. We want to find
+                smart solutions.
+              </p>
+            </div>
+            <p class="text-blue-600 mt-5">Learn more ></p>
+          </div>
+        </div>
+
+        <div
+          class="h-70 overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+            <img class="h-12 w-12 fill-current" src="./section-2/icon-2.png" />
+            <div class="mt-8 space-y-2">
+              <h3 class="font-bold">Bolt Performance</h3>
+              <p class="text-sm text-muted-foreground">
+                We’re driven beyond just finishing projects. We want to find
+                smart solutions.
+              </p>
+            </div>
+            <p class="text-blue-600 mt-5">Learn more ></p>
+          </div>
+        </div>
+
+        <div
+          class="h-70 relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+            <img class="h-12 w-12 fill-current" src="./section-2/icon-3.png" />
+            <div class="mt-8 space-y-2">
+              <h3 class="font-bold">Secure Transaction</h3>
+              <p class="text-sm text-muted-foreground">
+                We’re driven beyond just finishing projects. We want to find
+                smart solutions.
+              </p>
+            </div>
+            <p class="text-blue-600 mt-5">Learn more ></p>
+          </div>
+        </div>
+
+        <div
+          class="h-70 relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+            <img class="h-12 w-12 fill-current" src="./section-2/icon-4.png" />
+            <div class="mt-8 space-y-2">
+              <h3 class="font-bold">Multiple Options</h3>
+              <p class="text-sm text-muted-foreground">
+                We’re driven beyond just finishing projects. We want to find
+                smart solutions.
+              </p>
+            </div>
+            <p class="text-blue-600 mt-5">Learn more ></p>
+          </div>
+        </div>
+
+        <div
+          class="h-70 relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+            <img class="h-12 w-12 fill-current" src="./section-2/icon-5.png" />
+            <div class="mt-8 space-y-2">
+              <h3 class="font-bold">Customer Support</h3>
+              <p class="text-sm text-muted-foreground">
+                We’re driven beyond just finishing projects. We want to find
+                smart solutions.
+              </p>
+            </div>
+            <p class="text-blue-600 mt-5">Learn more ></p>
+          </div>
+        </div>
+
+        <div
+          class="h-70 relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+            <img class="h-12 w-12 fill-current" src="./section-2/icon-6.png" />
+            <div class="mt-8 space-y-2">
+              <h3 class="font-bold">Integrated with Shopify</h3>
+              <p class="text-sm text-muted-foreground">
+                We’re driven beyond just finishing projects. We want to find
+                smart solutions.
+              </p>
+            </div>
+            <p class="text-blue-600 mt-5">Learn more ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <div class="mt-10 lg:grid lg:grid-cols-2">
+      <div class="mr-10 flex justify-end">
+        <img
+          src="section-3.png"
+          class="lg:ml-[245px]"
+          alt="Section illustration"
+        />
+      </div>
+      <div class="lg:w-100 lg:mt-30 m-10 md:p-6">
+        <p class="text-4xl font-extrabold text-black">
+          Customer support is our main priority with their hundred percent
+          satisfaction.
+        </p>
+        <p class="mt-8">
+          Get your tests delivered at home. We collect samples with management
+          systems that follow the best design guidelines.
+        </p>
+        <div class="mt-12 flex justify-around">
+          <div>
+            <span
+              class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
+            >
+              <img src="check-sign.png" alt="Check sign" class="h-6" />
+              <span class="ml-1 text-base">Medical and vision</span>
+            </span>
+            <span
+              class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
+            >
+              <img src="check-sign.png" alt="Check sign" class="h-6" />
+              <span class="ml-1 text-base">HSAs and FSAs</span>
+            </span>
+          </div>
+
+          <div>
+            <span
+              class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
+            >
+              <img src="check-sign.png" alt="Check sign" class="h-6" />
+              <span class="ml-1 text-base">Life insurance</span>
+            </span>
+            <span
+              class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
+            >
+              <img src="check-sign.png" alt="Check sign" class="h-6" />
+              <span class="ml-1 text-base">Commuter benefits</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4 prices -->
+    <section class="text-gray-700 mt-20 body-font border-gray-200">
+      <div class="text-center mb-8">
+        <h2 class="text-lg font-bold text-green-600">Deal for your business</h2>
+        <p class="text-3xl font-semibold text-gray-800">
+          Meet our pricing plan that suits you
+        </p>
+      </div>
+      <div class="container px-5 py-10 mx-auto">
+        <div class="grid gap-8 lg:grid-cols-5 justify-center">
+          <!-- Features List -->
+          <div class="lg:mt-48 lg:w-[247px] text-xl sm:text-sm">
+            <div class="mt-px border-gray-300">
+              <p
+                class="text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px"
+              >
+                Full Access Library
+              </p>
+              <p
+                class="text-gray-900 h-12 text-center px-4 flex items-center justify-start"
+              >
+                Multiple user
+              </p>
+              <p
+                class="text-gray-900 h-12 text-center px-4 flex items-center justify-start"
+              >
+                Refund Policy
+              </p>
+              <p
+                class="text-gray-900 h-12 text-center px-4 flex items-center justify-start"
+              >
+                Google Analytics
+              </p>
+              <p
+                class="text-gray-900 h-12 text-center px-4 flex items-center justify-start"
+              >
+                24/7 support
+              </p>
+            </div>
+          </div>
+
+          <!-- Pricing Plans -->
+          <div
+            class="lg:col-span-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <!-- Starter Pack -->
+            <div class="border-2 border-gray-300 rounded-lg">
+              <div
+                class="px-4 text-center h-48 flex flex-col items-center justify-center"
+              >
+                <h3 class="tracking-widest">Starter Pack</h3>
+                <h2 class="text-3xl text-gray-900 font-medium mt-2 mb-4">
+                  $18.99/per mo.
+                </h2>
+              </div>
+              <div>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="cross-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="cross-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="cross-sign.png" />
+                </p>
+              </div>
+              <div class="border-t border-gray-300 p-6 text-center">
+                <button
+                  class="text-yellow-300 border-2 border-yellow-300 font-bold rounded-lg text-xl px-8 py-4 mb-2"
+                >
+                  Choose Plan
+                </button>
+                <p class="text-sm text-gray-500 mt-3">15 days free trial</p>
+              </div>
+            </div>
+
+            <!-- Premium Pack -->
+            <div class="border-2 rounded-lg border-indigo-500 relative">
+              <div
+                class="bg-[#52ACFF] rounded-lg text-center text-white w-full px-3 py-1 tracking-widest text-lg absolute top-0"
+              >
+                RECOMMENDED
+              </div>
+              <div
+                class="px-4 text-center h-48 flex flex-col items-center justify-center"
+              >
+                <h3 class="tracking-widest">Premium Pack</h3>
+                <h2 class="text-3xl text-gray-900 font-medium mt-2 mb-4">
+                  $29.99/per mo.
+                </h2>
+              </div>
+              <div>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="cross-sign.png" />
+                </p>
+              </div>
+              <div class="border-t border-gray-300 p-6 text-center">
+                <button
+                  class="text-white bg-yellow-300 font-bold rounded-lg text-xl px-8 py-4 mb-2"
+                >
+                  Choose Plan
+                </button>
+                <p class="text-sm text-gray-500 mt-3">30 days free trial</p>
+              </div>
+            </div>
+
+            <!-- Custom Pack -->
+            <div class="border-2 border-gray-300 rounded-lg">
+              <div
+                class="px-4 text-center h-48 flex flex-col items-center justify-center"
+              >
+                <h3 class="tracking-widest">Custom Pack</h3>
+                <h2 class="text-3xl text-gray-900 font-medium mt-2 mb-4">
+                  $23.99/per mo.
+                </h2>
+              </div>
+              <div>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="cross-sign.png" />
+                </p>
+              </div>
+              <div class="border-t border-gray-300 p-6 text-center">
+                <button
+                  class="text-yellow-300 border-2 border-yellow-300 font-bold rounded-lg text-xl px-8 py-4 mb-2"
+                >
+                  Choose Plan
+                </button>
+                <p class="text-sm text-gray-500 mt-3">30 days free trial</p>
+              </div>
+            </div>
+
+            <!-- Ultimate Pack -->
+            <div class="border-2 border-gray-300 rounded-lg">
+              <div
+                class="px-4 text-center h-48 flex flex-col items-center justify-center"
+              >
+                <h3 class="tracking-widest">Ultimate Pack</h3>
+                <h2 class="text-3xl text-gray-900 font-medium mt-2 mb-4">
+                  $35.99/per mo.
+                </h2>
+              </div>
+              <div>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+                <p class="text-gray-600 h-12 flex items-center justify-center">
+                  <img src="green-check-sign.png" />
+                </p>
+              </div>
+              <div class="border-t border-gray-300 p-6 text-center">
+                <button
+                  class="text-yellow-300 border-2 border-yellow-300 font-bold rounded-lg text-xl px-8 py-4 mb-2"
+                >
+                  Choose Plan
+                </button>
+                <p class="text-sm text-gray-500 mt-3">45 days free trial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 support team -->
+    <div class="flex mt-10 justify-center items-center">
+      <div class="mt-10 lg:grid lg:grid-cols-2">
+        <div class="ml-[50%] flex justify-center mt-8">
+          <div>
+            <div class="text-4xl font-extrabold text-black">
+              Do you need help? Our support team ready to help you.
+            </div>
+            <div class="mt-4">
+              Get your tests delivered at let home collect sample from the
+              victory of the managments that supplies best design system
+              guidelines ever.
+            </div>
+            <div class="h-30 bg-white select-none p-2">
+              <div class="flex h-[100px] justify-between rounded-md p-4">
+                <img
+                  class="h-12 w-12 fill-current"
+                  src="./section-2/icon-2.png"
+                />
+                <div class="ml-3 space-y-2">
+                  <div class="flex">
+                    <h3 class="font-bold text-xl mr-3">Email client support</h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-move-right"
+                    >
+                      <path d="M18 8L22 12L18 16" />
+                      <path d="M2 12H22" />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm text-muted-foreground text-lg">
+                    Ultimate access to all credit popular exercises and
+                    assessments materials.
+                  </p>
+                </div>
+              </div>
+              <div class="flex h-[100px] justify-between rounded-md p-4">
+                <img class="h-12 w-12 fill-current" src="./code.png" />
+                <div class="ml-3 space-y-2">
+                  <div class="flex">
+                    <h3 class="font-bold text-xl mr-3">Live ticket support</h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-move-right"
+                    >
+                      <path d="M18 8L22 12L18 16" />
+                      <path d="M2 12H22" />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm text-muted-foreground text-lg">
+                    Total assessment corrections with live support tickets
+                    download access system.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <img src="man-with-chat.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6 Companies -->
+    <div class="mt-20">
+      <div class="flex mx-5 justify-center items-center">
+        <div>
+          <div class="font-extrabold text-4xl text-center">
+            Company who also worked us
+          </div>
+          <div class="mt-5 text-lg text-center">
+            Every email, web page, and social media post makes an impression on
+            your
+          </div>
+          <div class="mt-1 text-lg text-center">
+            customers. With our software you can be confident it's impression.
+          </div>
+          <div class="text-lg text-center mt-4 text-blue-600">
+            Explore Details >
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center items-center">
+        <img src="company.png" />
+      </div>
+    </div>
+
+    <!-- Section 7 Ideal solutions -->
+    <div>
+      <div class="text-center mb-10">
+        <p class="text-green-600">Ideal solutions for you</p>
+        <h2
+          class="mt-2 font-header text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+        >
+          Go beyond ultimate features
+        </h2>
+      </div>
+
+      <div class="flex justify-center items-center m-5">
+        <div>
+          <div class="float-right lg:mr-7">
+            <img src="section-7/pattern.png" />
+          </div>
+          <div>
+            <img src="section-7/image-3.png" />
+            <h1 class="text-black lg:text-xl md:text-sm font-extrabold">
+              Introducing our newest team<br />with great experience
+            </h1>
+            <div class="text-base mt-4 text-blue-600">Learn more ></div>
+          </div>
+        </div>
+        <div class="ml-8">
+          <img src="section-7/image.png" />
+          <h1 class="text-black mt-5 lg:text-xl md:text-sm font-extrabold">
+            New banking application has developed and<br />we expecting good
+            feedback
+          </h1>
+          <div class="text-base mt-4 text-blue-600">Explore Details ></div>
+        </div>
+        <div class="ml-8">
+          <div class="mb-10">
+            <img src="section-7/image-1.png" />
+            <h1 class="mt-5 text-black lg:text-xl md:text-sm font-extrabold">
+              Ui/UX industry are doing great<br />job in previous year history
+            </h1>
+          </div>
+          <div class="mb-10">
+            <img src="section-7/image-2.png" />
+            <h1 class="text-black mt-5 lg:text-xl md:text-sm font-extrabold">
+              Develop you design experience<br />with figma features.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 8 FAQ-->
+    <div
+      id="faq"
+      class="mt-20 mx-auto max-w-2xl divide-y divide-gray-900/10 lg:max-w-7xl p-4 md:p-8"
+    >
+      <div class="text-center">
+        <p class="text-green-600">Get your question answer</p>
+        <h2
+          class="mt-2 font-header text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+        >
+          Frequently asked questions
+        </h2>
+      </div>
+
+      <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt
+            class="text-base font-semibold leading-7 text-gray-900 lg:col-span-3 dark:text-gray-300"
+          >
+            01. Which domain should I purchase?
+          </dt>
+          <dd class="mt-4 lg:col-span-9 lg:mt-0 flex justify-around">
+            <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+              Get your website tests delivered at the home collect a sample ...
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt
+            class="text-base font-semibold leading-7 text-gray-900 lg:col-span-3 dark:text-gray-300"
+          >
+            02. What are some tips when choosing a name?
+          </dt>
+          <dd class="mt-4 lg:col-span-9 lg:mt-0 flex justify-around">
+            <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+              We make it easy to move to CometNine. Simply contact us and we'll
+              move your hosting account from any other provider, regardless of
+              the control panel. If at anytime your website is down for more
+              than 0.1% result with proper investigation experiments.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-minus"
+            >
+              <path d="M5 12h14" />
+            </svg>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt
+            class="text-base font-semibold leading-7 text-gray-900 lg:col-span-3 dark:text-gray-300"
+          >
+            03. What if I need help choosing the right domain?
+          </dt>
+          <dd class="mt-4 lg:col-span-9 lg:mt-0 flex justify-around">
+            <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+              Create a hub for cross-functional work that also works with all
+              ...
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt
+            class="text-base font-semibold leading-7 text-gray-900 lg:col-span-3 dark:text-gray-300"
+          >
+            04. Can I upgrade or downgrade my web hosting subscription system?
+          </dt>
+          <dd class="mt-4 lg:col-span-9 lg:mt-0 flex justify-around">
+            <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+              The pricing made me a little hesitant at first but I have been ...
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+          </dd>
+        </div>
+        <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+          <dt
+            class="text-base font-semibold leading-7 text-gray-900 lg:col-span-3 dark:text-gray-300"
+          >
+            05. Learn from community on Brandwagon
+          </dt>
+          <dd class="mt-4 lg:col-span-9 lg:mt-0 flex justify-around">
+            <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+              Stop your viewers from getting distracted. Publish videos to ...
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+          </dd>
+        </div>
+      </dl>
+
+      <a href="contact.html"
+        ><div class="flex justify-center items-center mt-10">
+          <button
+            type="button"
+            class="text-gray-900 bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2"
+          >
+            Still Question? Contact us
+          </button>
+        </div></a
+      >
+    </div>
+
+    <!-- footer -->
+    <section class="pt-10 pb-7 text-black">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-5 min-[400px]:grid-cols-2 gap-y-8 py-14 border-b-2 border-gray-700"
+        >
+          <div class="">
+            <h6 class="text-xl font-bold mb-7">Home</h6>
+            <ul class="flex flex-col gap-6">
+              <li>
+                <a href="javascript:;" class="text-black">About</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Careers & Culture</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Affiliate</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Blog</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Press</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h6 class="text-xl font-bold mb-7">About Us</h6>
+            <ul class="flex flex-col gap-6">
+              <li>
+                <a href="javascript:;" class="text-black">Support Center</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Customer Support</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">About Us</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Copyright</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Popular Campaign</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h6 class="text-xl font-bold mb-7">Our Information</h6>
+            <ul class="flex flex-col gap-6">
+              <li>
+                <a href="javascript:;" class="text-black">Return Policy</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Site Map</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Store Hours</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h6 class="text-xl font-bold mb-7">My Account</h6>
+            <ul class="flex flex-col gap-6">
+              <li>
+                <a href="javascript:;" class="text-black">Press inquiries</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Social media </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">directories</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Images & B-roll</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black">Permissions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h6 class="text-xl font-bold mb-7">Policy</h6>
+            <ul class="flex flex-col gap-6">
+              <li>
+                <a href="javascript:;" class="text-black"
+                  >Application security</a
+                >
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black"
+                  >Software principles</a
+                >
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black"
+                  >Unwanted software policy</a
+                >
+              </li>
+              <li>
+                <a href="javascript:;" class="text-black"
+                  >Responsible supply chain</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="py-7 border-t border-gray-700">
+          <div
+            class="flex items-center justify-around flex-col lg:space-y-0 space-y-8 lg:justify-between lg:flex-row"
+          >
+            <div class="flex justify-center">
+              <img src="./logo.png" />
+              <div class="text-gray-400 mt-3 block">
+                © <a href="">Startupland</a> 2024, All rights reserved.
+              </div>
+            </div>
+
+            <div
+              class="flex justify-around space-x-4 sm:justify-center sm:mt-0"
+            >
+              <div>Home</div>
+              <div>Adversite</div>
+              <div>Supports</div>
+              <div>Marketing</div>
+              <div>FAQ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</html>
