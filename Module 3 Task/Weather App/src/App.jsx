@@ -34,7 +34,7 @@ const WeatherApp = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="text-3xl font-bold mb-6">Weather App</h1>
+      <h1 className="text-3xl font-bold mb-6">WeatherSphere</h1>
       <div className="flex space-x-2 mb-4">
         <div class="max-w-sm space-y-3">
           <input
@@ -69,7 +69,7 @@ const WeatherApp = () => {
 
           <div className="font-normal text-gray-700">
             <p>Humidity: {weather.main.humidity}%</p>
-            <p>Feels Like: {weather.main.feels_like}%</p>
+            <p>Feels Like: {weather.main.feels_like}°C</p>
             <p>Max Temp: {weather.main.temp_max}°C</p>
             <p>Min Temp: {weather.main.temp_min}°C</p>
             <p>Pressure: {weather.main.pressure} Pa</p>
