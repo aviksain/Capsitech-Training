@@ -7,11 +7,12 @@ function Input({
   type,
   className,
   FieldValue,
-  handleChange
+  handleChange,
+  error
 }) {
   return (
     <>
-      <label for={id} class="block text-gray-700 mb-1">
+      <label for={id} className="block text-gray-700 mb-1">
         {label}
       </label>
       <input
@@ -24,6 +25,7 @@ function Input({
         placeholder={placeholder}
         required
       />
+      <p id="error" className="text-red-500 text-sm">{error}</p>
     </>
   );
 }
