@@ -13,7 +13,7 @@ function SelectInput({ label, myForm, id, options }) {
         onChange={myForm.handleChange}
       >
         {options.map(({ value, optionlabel }) => (
-          <option value={value}>{optionlabel}</option>
+          <option key={value} value={value}>{optionlabel}</option>
         ))}
       </select>
       <p id="error" className="text-red-500 text-sm">

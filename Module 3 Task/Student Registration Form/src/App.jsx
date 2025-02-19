@@ -10,22 +10,19 @@ function App() {
 
     if (!values.name) {
       errors.name = "Name is required";
-    } 
-    else if (values.name.length < 3) {
+    } else if (values.name.length < 3) {
       errors.name = "Name must be at least 3 characters";
     }
 
     if (!values.age) {
       errors.age = "Age is required";
-    } 
-    else if (values.age < 18) {
+    } else if (values.age < 18) {
       errors.age = "You must be at least 18 years old";
     }
 
     if (!values.email) {
       errors.email = "Email is required";
-    } 
-    else {
+    } else {
       const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (!emailPattern.test(values.email)) {
         errors.email = "Invalid email address";
@@ -45,9 +42,11 @@ function App() {
       age: "",
       email: "",
       course: "",
+      termsAndConditions: false,
     },
     validate,
-    onSubmit: ({ resetForm }) => {
+    onSubmit: (values) => {
+      console.log(values);
       setShowPopUp(true);
     },
   });
@@ -102,7 +101,10 @@ function App() {
                   id="course"
                   options={[
                     { value: "", optionlabel: "Choose a Option" },
-                    { value: "web-development", optionlabel: "Web Development", },
+                    {
+                      value: "web-development",
+                      optionlabel: "Web Development",
+                    },
                     { value: "data-science", optionlabel: "Data Science" },
                     { value: "ai-ml", optionlabel: "AI & Machine Learning" },
                     { value: "cyber-security", optionlabel: "Cyber Security" },
@@ -112,14 +114,20 @@ function App() {
 
               <div className="mb-5 mt-5">
                 <input
-                  id="terms"
+                  id="termsAndConditions"
                   type="checkbox"
-                  value=""
                   className="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50"
+                  checked={myForm.values.termsAndConditions}
+                  onChange={() =>
+                    myForm.setFieldValue(
+                      "termsAndConditions",
+                      !myForm.values.termsAndConditions
+                    )
+                  }
                   required
                 />
                 <label
-                  for="terms"
+                  htmlFor="termsAndConditions"
                   className="ms-2 text-sm font-medium text-gray-900"
                 >
                   I agree with the{" "}

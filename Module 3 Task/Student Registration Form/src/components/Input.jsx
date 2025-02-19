@@ -12,7 +12,7 @@ function Input({
 }) {
   return (
     <>
-      <label for={id} className="block text-gray-700 mb-1">
+      <label htmlFor={id} className="block text-gray-700 mb-1">
         {label}
       </label>
       <input
