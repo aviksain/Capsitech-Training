@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "allowJs": true,
+    "noEmit": false
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}

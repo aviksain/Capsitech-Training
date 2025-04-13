@@ -3,10 +3,10 @@ import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 import { useTodo } from "../Context/TodoContext.jsx";
 import { loginUser } from "../api/users.js";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LogIn() {
-  const {saveUser} = useTodo();
+  const { saveUser } = useTodo();
   const navigate = useNavigate();
 
   const validate = (values) => {
@@ -34,10 +34,14 @@ function LogIn() {
     },
     validate,
     onSubmit: async (values, { resetForm }) => {
-      await loginUser(values);
-      saveUser(values);
-      navigate('/todos');
-      resetForm();
+      try {
+        await loginUser(values);
+        saveUser(values);
+        navigate("/todos");
+        resetForm();
+      } catch (error) {
+        console.log(error);
+      }
     },
   });
 
@@ -45,7 +49,9 @@ function LogIn() {
     <>
       <div className="min-h-screen bg-[#121212]">
         <header className="fixed top-0 z-10 mx-auto w-full max-w-full bg-[#121212] p-6 text-white lg:px-10">
-        <Link to="/" className="text-xl font-extrabold md:text-3xl">TaskFlow</Link>
+          <Link to="/" className="text-xl font-extrabold md:text-3xl">
+            TaskFlow
+          </Link>
         </header>
         <div className="mx-auto flex w-full items-stretch justify-between gap-10">
           <div className="mt-20 flex w-full flex-col items-start justify-start p-6 md:w-1/2 lg:px-10">
@@ -75,7 +81,7 @@ function LogIn() {
                   className="w-full border-[1px] border-white bg-black p-4 text-white placeholder:text-gray-500"
                 />
                 {myForm.touched.email && myForm.errors.email && (
-                  <p className="text-red-500 text-xs">{myForm.errors.email}</p> 
+                  <p className="text-red-500 text-xs">{myForm.errors.email}</p>
                 )}
               </div>
               <div className="flex w-full flex-col items-start justify-start gap-2">
@@ -92,7 +98,9 @@ function LogIn() {
                   className="w-full border-[1px] border-white bg-black p-4 text-white placeholder:text-gray-500"
                 />
                 {myForm.touched.password && myForm.errors.password && (
-                  <p className="text-red-500 text-xs">{myForm.errors.password}</p> 
+                  <p className="text-red-500 text-xs">
+                    {myForm.errors.password}
+                  </p>
                 )}
               </div>
               <div className="mt-3 inline-flex w-full items-center justify-between">
