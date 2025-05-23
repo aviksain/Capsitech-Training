@@ -58,7 +58,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy
-                .WithOrigins("https://stalwart-platypus-d70b99.netlify.app") // Allow specific origin(s)
+                .WithOrigins("http://localhost:5173") // Allow specific origin(s)
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials(); // Required if you're sending cookies (like JWT in cookies)
